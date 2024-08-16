@@ -19,12 +19,13 @@ from django.urls import path, include
 
 from rest_framework.routers import DefaultRouter
 
-from FedoraCoffee.views import ClientViewSet, OrderViewSet
+from FedoraCoffee.views import ClientViewSet, OrderViewSet, CategoryViewSet
 from user.router import router as user_router
 
 router = DefaultRouter()
 router.register(r"clients", ClientViewSet)
 router.register(r"orders", OrderViewSet)
+router.register(r"categories", CategoryViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
