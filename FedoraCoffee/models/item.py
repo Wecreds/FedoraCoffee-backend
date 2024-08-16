@@ -7,4 +7,4 @@ class Item(models.Model):
     minStock = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.name
+        return self.description
