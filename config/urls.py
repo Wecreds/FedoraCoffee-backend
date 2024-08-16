@@ -32,6 +32,7 @@ router.register(r"categories", views.CategoryViewSet)
 router.register(r"products", views.ProductViewSet)
 router.register(r"items", views.ItemViewSet)
 router.register(r"extras", views.ExtraViewSet)
+router.register(r"ordersExtras", views.orderExtraViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
