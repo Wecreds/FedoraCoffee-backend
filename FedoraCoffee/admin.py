@@ -8,5 +8,6 @@ admin.site.register(models.Product)
 admin.site.register(models.Item)
 admin.site.register(models.Extra)
 admin.site.register(models.Order_extra)
+admin.site.register(models.Order_product)
 
 # Register your models here.

@@ -5,3 +5,4 @@ from .product import ProductViewSet
 from .item import ItemViewSet
 from .extra import ExtraViewSet
 from .orderExtra import orderExtraViewSet
+from .orderProduct import orderProductViewSet

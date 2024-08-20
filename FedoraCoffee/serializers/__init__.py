@@ -5,3 +5,4 @@ from .product import ProductSerializer
 from .item import ItemSerializer
 from .extra import ExtraSerializer
 from .orderExtra import orderExtraSerializer
+from .orderProduct import orderProductSerializer

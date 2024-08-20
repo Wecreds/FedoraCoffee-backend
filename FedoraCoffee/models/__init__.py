@@ -5,3 +5,4 @@ from .product import Product
 from .item import Item
 from .extra import Extra
 from .order_extra import Order_extra
+from .order_product import Order_product
