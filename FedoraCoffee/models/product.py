@@ -14,7 +14,7 @@ class Product(models.Model):
         blank=True,
         default=None,
     )
-    Category = models.ForeignKey(
+    category = models.ForeignKey(
         Category, on_delete=models.PROTECT, related_name="products", blank=False
     )
 

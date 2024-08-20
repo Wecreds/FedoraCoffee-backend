@@ -10,9 +10,9 @@ class Order(models.Model):
 
     status = models.IntegerField(choices=Status.choices, default=Status.IN_PROGRESS)
     data = models.DateTimeField(default=timezone.now)
-    Client = models.ForeignKey(
+    client = models.ForeignKey(
         Client, on_delete=models.PROTECT, related_name="orders", blank=False
     )
 
     def __str__(self):
-        return f'({self.get_status_display()}) {self.Client} - {self.data}'
+        return f'({self.get_status_display()}) {self.client} - {self.data}'

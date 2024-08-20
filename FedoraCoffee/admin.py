@@ -7,6 +7,6 @@ admin.site.register(models.Category)
 admin.site.register(models.Product)
 admin.site.register(models.Item)
 admin.site.register(models.Extra)
-admin.site.register(models.orderExtra)
+admin.site.register(models.Order_extra)
 
 # Register your models here.
