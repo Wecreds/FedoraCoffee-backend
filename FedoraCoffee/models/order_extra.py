@@ -9,4 +9,4 @@ class Order_extra(models.Model):
     )
     
     def __str__(self):
-        return self.extra
+        return self.extra.description

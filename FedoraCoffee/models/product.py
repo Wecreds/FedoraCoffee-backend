@@ -6,6 +6,7 @@ from uploader.models import Image
 class Product(models.Model):
     name = models.CharField(max_length=75)
     ingredients = models.JSONField() # O Django aponta problema ao tentar nomear um objeto como "models", provavelmente por causa que esse nome é usado em outros lugares.
+    price = models.DecimalField(blank=False, max_digits=7, decimal_places=2, default=0)
     photo = models.ForeignKey(
         Image,
         related_name="+",
