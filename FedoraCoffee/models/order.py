@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
 from .client import Client
-from .order_product import Order_product
 
 class Order(models.Model):
     class Status(models.IntegerChoices):
@@ -14,7 +13,6 @@ class Order(models.Model):
     client = models.ForeignKey(
         Client, on_delete=models.PROTECT, related_name="orders", blank=False
     )
-    products = models.ManyToManyField(Order_product)
 
     def __str__(self):
         return f'({self.get_status_display()}) {self.client} - {self.data}'
