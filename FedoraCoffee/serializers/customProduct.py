@@ -18,3 +18,4 @@ class CustomProductSerializer(ModelSerializer):
     class Meta:
         model = Product
         fields = ['name', 'photo_attachment_key', 'capa', 'photo', 'price']
+        depth = 1
